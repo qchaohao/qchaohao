@@ -46,7 +46,7 @@
 
   - ***吉多·范·罗苏姆(Guido van Rossum)***，1956年1月31日生于荷兰哈勒姆，1982年在阿姆斯特丹大学获得数学和计算机科学硕士学位。后来在荷兰阿姆斯特丹的国家数学和计算机科学研究学会，在马里兰州Gaithersburg的国家标准暨技术研究院，在维珍尼亚州Reston的国家创新研究公司(CNRI)工作过。
   - 语言的最初设计者及主要架构师，在社区被人们认为是 ***终身仁慈独裁者(BDFL)***，意思是他仍然关注Python的开发进程并在必要的时刻做出决定。2005年12月加入Google，2012年12月7日加入Dropbox，2020年11月12日加入Microsoft。
-  <img src="creator.jpg" width="200" height="200" alt="作者简介">
+  - <img src="creator.jpg" width="100" height="100" alt="作者简介">
 
   <!-- ![作者简介](./creator.jpg) -->
   
