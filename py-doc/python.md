@@ -40,8 +40,6 @@
 
 # Python语言
 
-<img src="./logo.jpg" width="40%" height="40%" alt="语言简介">
-
 ## 历史简介
 
 ### 作者简介
@@ -55,6 +53,7 @@
   - Python在八十年代末和九十年代初，在 ***荷兰国家数学和计算机科学研究所*** 设计出来的，源代码遵循GPL（GNU General Public License）协议，是一种解释型、交互式、面向对象和初学者的语言，第一个公开发行版发行于 ***1991年*** 。
   - ***Python2.0于2000年10月16日发布***，增加了实现完整的垃圾回收并且支持Unicode。Python2.7被确定为最后一个Python2.x版本，它除了支持Python2.x语法外还支持部分Python3.1语法。
   - ***Python3.0于2008年12月3日发布***，被称为Python3000或简称Py3k。此版不完全兼容之前的Python源代码，不过很多新特性后来也被移植到旧的Python2.6/2.7版本。
+  - <img src="./logo.jpg" width="40%" height="40%" alt="语言简介">
 
 ### 特性特点
   
