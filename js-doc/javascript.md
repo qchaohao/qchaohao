@@ -40,15 +40,15 @@
 
 # JavaScript语言
 
+<img src="./logo.jpg" width="40%" height="40%" alt="语言简介">
+
 ## 历史简介
 
 ### 作者简介
 
   - ***布兰登·艾奇(Brendan Eich)***，人称JS之父，注意力币(Basic Attention Token)/BAT币创始人，也是 Mozilla 基金会和火狐浏览器的联合创始人。
   - 布兰登·艾奇1961年生于美国加州的森尼维尔市，毕业于伊利诺伊大学香槟分校。1986年获取伊利诺伊大学香槟分校计算机科学硕士学位。1995年任职于网景期间，为网景浏览器开发出JavaScript，之后成为浏览器上应用最广泛的脚本语言之一。1998年布兰登协助成立mozilla，2003年在美国在线决定结束网景浏览器的开发后，布兰登协助成立了Mozilla基金会。2014年3月24日，艾奇晋升为Mozilla公司首席执行官。2014年4月3日，艾奇宣布从Mozilla离职。艾奇在他的个人博客中写道：“Mozilla的使命远超过我们任何一人，无法胜任Mozilla的领导职位”。2015年5月28日，艾奇成立Brave软件公司，这是一家互联网安全公司，已经从天使投资者募集了250万美元的早期资金。该公司的联合创始人Brian Bondy曾在Mozilla和可汗学院工作。2016年1月20日，该公司发布了Brave网页浏览器。2017年5月，Brendan Eich发起的去中心化网页浏览器“Brave”仅30秒就完成了约3千5百万美元的ICO发售。
-  <img src="creator.jpg" width="200" height="200" alt="作者简介">
-
-  <!-- ![作者简介](./creator.jpg) -->
+  - <img src="./creator.jpg" width="30%" height="30%" alt="作者简介">
 
 ### 版本历史
 

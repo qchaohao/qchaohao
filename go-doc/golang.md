@@ -40,21 +40,17 @@
 
 # Golang语言
 
+<img src="./logo.jpg" width="40%" height="40%" alt="语言简介">
+
 ## 历史简介
 
 ### 作者简介
 
-Thompson：1983年图灵奖（Turing Award）和1998年美国国家技术奖（National Medal of Technology）得主。他与Dennis Ritchie是Unix的原创者。Thompson也发明了后来衍生出C语言的B程序语言。
-
-Pike：曾是贝尔实验室（Bell Labs）的Unix团队，和Plan 9操作系统计划的成员。他与Thompson共事多年，并共创出广泛使用的UTF-8 字元编码。
-
-
-
-Robert Griesemer：曾协助制作Java的HotSpot编译器，和Chrome浏览器的JavaScript引擎V8。
-
-
-
-此外还有Plan 9开发者Russ Cox、和曾改善已广泛使用之开源码编译器GCC的Ian Taylor。
+  - Go是从2007年末由Robert Griesemer, Rob Pike, Ken Thompson主持开发，后来还加入了曾改善已广泛使用之开源码编译器GCC的Ian Lance Taylor, Plan 9开发者Russ Cox等人，并最终于2009年11月开源，在2012年早些时候发布了Go 1稳定版本。现在Go的开发已经是完全开放的，并且拥有一个活跃的社区。
+  - 肯尼斯·蓝·汤普森（Kenneth Lane Thompson）：1983年图灵奖（Turing Award）和1998年美国国家技术奖（National Medal of Technology）得主。他与Dennis Ritchie是Unix的原创者。Thompson也发明了后来衍生出C语言的B程序语言。
+  - Pike：曾是贝尔实验室（Bell Labs）的Unix团队，和Plan 9操作系统计划的成员。他与Thompson共事多年，并共创出广泛使用的UTF-8 字元编码。
+  - Robert Griesemer：曾协助制作Java的HotSpot编译器，和Chrome浏览器的JavaScript引擎V8。
+  - <img src="./creator1.jpg" width="30%" height="30%" alt="作者简介">
 
 ### 版本历史
 
