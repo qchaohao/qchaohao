@@ -46,7 +46,7 @@
 
 ### 作者简介
 
-  - ***布兰登·艾奇（Brendan Eich）***，1961年生于 ***美国加州*** 的森尼维尔市。
+  - **布兰登·艾奇（Brendan Eich）<sup>!!!</sup>**，1961年生于 ***美国加州*** 的森尼维尔市。
   - ***JS之父***，是 ***Mozilla基金会*** 和 ***火狐浏览器*** 的联合创始人。
   - 1986年获取 ***伊利诺伊大学香槟分校*** 计算机科学硕士学位。
   - 1995年任职于 ***网景*** 期间为网景浏览器开发出 ***JavaScript***。
@@ -57,22 +57,16 @@
 
 ### 版本历史
 
-  - 1995年出现在 ***Netscape*** 中。
-  - 发展初期有 Netscape 的 ***JavaScript***，微软的 ***JScript*** 和 CEnvi 的 ***ScriptEase*** 三足鼎立。
-  - ***1997年***，在 ***ECMA（欧洲计算机制造商协会）*** 的协调下，由 Netscape、Sun、微软、Borland 组成的工作组确定统一标准： <sup>**ECMA-262**</sup> 是 JavaScript 标准的官方名称，因此也称为 ***ECMAScript***。
-  - ECMAScript6 也称为 ECMAScript2015，ECMAScript7 也称为 ECMAScript2016。
-  - JavaScript 是 ***甲骨文*** 公司的注册商标，完整的JavaScript实现包含三个部分： <sup>**ECMAScript**</sup>，<sup>**文档对象模型**</sup> 和 <sup>**浏览器对象模型**</sup>。
-  
-  | 年份 | 名称           | 描述                                                  |
-  | :--- | :------------- | :---------------------------------------------------- |
-  | 1997 | ECMAScript 1   | 第一个版本                                            |
-  | 1998 | ECMAScript 2   | 版本变更                                              |
-  | 1999 | ECMAScript 3   | 添加正则表达式<br>添加 try/catch                      |
-  |      | ECMAScript 4   | 没有发布                                              |
-  | 2009 | ECMAScript 5   | 添加 "strict mode"<br>添加 JSON 支持                  |
-  | 2011 | ECMAScript 5.1 | 版本变更                                              |
-  | 2015 | ECMAScript 6   | 添加 类 和 模块                                       |
-  | 2016 | ECMAScript 7   | 增加指数运算符（**）<br>增加 Array.prototype.includes |
+  - 1995年出现在 ***Netscape***，初期还有微软的 ***JScript*** 和CEnvi的 ***ScriptEase***。
+  - 1997年在 **ECMA（欧洲计算机制造商协会）<sup>!!!</sup>** 的协调下，由 Netscape、Sun、微软、Borland 确定统一标准。
+  - **ECMA-262<sup>!!!</sup>** 是 JavaScript 标准的官方名称，因此也称为 **ECMAScript<sup>!!!</sup>**。
+  - 甲骨文公司注册商标，完整的JS实现包含： ***ECMAScript***，***文档对象模型*** 和 ***浏览器对象模型***。
+  - 1998年 ECMAScript 2，版本变更。
+  - 1999年 ECMAScript 3，添加正则表达式，添加 try/catch 。
+  - 2009年 ECMAScript 5，添加 "strict mode"，添加 JSON 支持。
+  - 2011年 ECMAScript 5.1，版本变更。
+  - 2015年 ECMAScript 6，添加类和模块。
+  - 2016年 ECMAScript 7，增加指数运算符（**），增加 Array.prototype.includes。
 
 ### 特性特点
 
