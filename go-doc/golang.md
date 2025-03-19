@@ -97,37 +97,44 @@
 
 ### 命名规范
 
-  - ***标识符*** 必须是 ***字母、数字和下划线（ _ ）*** 组成。
-  - ***标识符*** 首位不能是 ***数字*** 并且对 ***大小写敏感***。
-  - ***常量*** 必须全部 ***大写***，多个单词用 ***下划线（ _ ）*** 分割。
+  - ***标识符*** 是由 ***字母、数字和下划线（ _ ）*** 组成，首位非数字并区分大小写，避开常用关键字。
+  - ***包名（文件夹）*** 使用 ***串式命名法（kebab-case）***，全部小写。
+  - ***模块名（文件）*** 使用 ***蛇形命名法（snake_case）***，全部小写。
+  - ***常量/枚举*** 使用 ***蛇形命名法（snake_case）***，全部大写。
+  - ***局部变量/函数，属性/方法*** 使用 ***驼峰命名法（camelCase）***。
+  - ***全局变量/函数，属性/方法*** 使用 ***帕斯卡命名法（PascalCase）***。
+  - ***类/结构体/对象*** 使用 ***帕斯卡命名法（PascalCase）***。
+  - ***临时数据*** 使用 ***匈牙利命名法***，尾缀（suffix），Int/Flt, Byt/Str, Lst/Map, Tup/Set
+  - ***正规数据*** 使用 ***匈牙利命名法***，尾缀（suffix），Numb, Buff, Text, Data, Name, Date, Time
+  - ***信息数据*** 使用 ***匈牙利命名法***，尾缀（suffix），Msg, 
+
+  - 属性前缀（prefix），is	对象是否符合期待的状态	isValid  避免使用否定词
+  - 属性前缀（prefix），has	对象是否持有期待的数据	hasObservers  避免使用否定词
+  - 属性前缀（prefix），may	对象是否允许期待的数据	hasObservers  避免使用否定词
   
-  - ***局部变量 普通方法*** 驼峰写法。
-  - ***全局变量 全局方法*** 帕斯卡写法。
+  - 方法前缀（prefix），can	对象是否允许执行方法	canRemove
+  - 方法前缀（prefix），need 对象是否需要执行方法	canRemove
+  - 方法前缀（prefix），must 对象是否必须执行方法	canRemove
+
+  - 方法前缀（prefix），should 对象应该不应该执行方法 shouldMigrate
+  -     shall/will
+
+  
+
+
+  - ***包名（文件夹）*** 使用名词，优先单个复数单词，涵盖一批或一类功能组。
   - ***私有属性与私有方法*** 驼峰风格。
-  - 方法以动词开头
+  - 函数方法以动词开头，至少3个单词
+  其他命名正规英文单词命名，该有复数有复数
 
-
-  - ***文件夹（包名）*** 必须全部 ***小写***，优先使用单个复数单词，涵盖一批或一类功能组。
-  - ***文件夹（包名）*** 多个单词使用 ***下划线（ _ ）*** 分割，顶级包名使用 ***横线（ - ）*** 分割。
-  - ***文件名（模块/非模块）*** 必须全部 ***小写*** ，多个单词使用 ***下划线（ _ ）*** 分割。
+  
 
   
   ```
-驼峰命名法（CamelCase）
-蛇形命名法（snake_case）
-串式命名法（kebab-case）
-测试方法名、常量、枚举名称需要使用蛇形命名法（snake_case），比如should_get_200_status_code_when_request_is_valid、CLIENT_CONNECT_SERVER_FAILURE。并且，测试方法名称要求全部小写，常量以及枚举名称需要全部大写。
-项目文件夹名称使用串式命名法（kebab-case）
+测试方法名使用蛇形命名法（snake_case）。测试方法名称要求全部小写。
 测试类命名以它要测试的类的名称开始，以 Test 结尾
 
-文件夹全部采用小写代码，使用名词，不适用动词。
-
-
-
-  不同方法组靠第一个动词区分
-  不同变量组靠第一个单词区分
-  set something (to something )  + (with something)
-  get something (from something) +  (with something)
+in，on，with，by，for，from, at，as, of, to, into, onto, over, per
 
 
   open 打开	close 关闭
@@ -136,53 +143,49 @@
   mark 标记  clean 清理	
   load 载入  clear 清除  	 
   view 查看	 edit 编辑
-  redo 重做  undo 撤销	
   copy 复制	paste 粘贴
   enter 进入	quit 退出
   expand 展开	collapse 折叠
   backup 备份	restore 恢复
-  import 导入	export 导出
-
-  get获取	   set 设置
   init 初始	 end 结束
   add 增加	remove 删除
   create 创建	destroy 销毁
   query 查询 reply 回复
   select 选取	 ignore 忽略
-  extract 提取 inject 注入	
   find 查找	  collect 收集
   search 搜索  listen 监听
-
   format 格式  keep 保持 
   parse 解析  make 制作
   modify 修改 lock 锁定  
   sort 排序  filter 筛选
-  contain 包含 exclude  排除
   split 分割	merge 合并
   send 发送	receive 接收
   download 下载	upload 上传
-  attach 附着	detach 脱离
   bind 绑定	separate 分离
   insert 插入	delete 移除
   update 更新	reset 重置
-  encode 编码	decode 解码
-  encrypt 加密	decrypt 解密
-  input 输入	output 输出
   build 构建	publish 发布
   start 开始	finish 完成
   compile 编译	execute 执行
   submit 提交  cancel 取消
   match 匹配  differ 区分
-  
-Prefix-前缀，Suffix-后缀，Alone-单独使用
-Prefix	is	对象是否符合期待的状态	isValid
-Prefix	can	对象能否执行所期待的动作	canRemove
-Prefix	should	调用方执行某个命令或方法是好还是不好,应不应该，或者说推荐还是不推荐	shouldMigrate
-Prefix	has	对象是否持有所期待的数据和属性	hasObservers
-Prefix	needs	调用方是否需要执行某个命令或方法	needsMigrate
 
-ensure	检查是否为期待的状态，不是则抛出异常或返回error code	ensureCapacity
-validate	检查是否为正确的状态，不是则抛出异常或返回error code	validateInputs
+
+  get获取	   set 设置
+  redo 重做  undo 撤销
+  import 导入	export 导出
+  include 包含 exclude  排除
+  extract 提取 inject 注入
+  attach 附着	detach 脱离
+  encode 编码	decode 解码
+  encrypt 加密	decrypt 解密
+  input 输入	output 输出
+  
+
+
+  
+  
+
 
   ```
 
@@ -190,6 +193,22 @@ validate	检查是否为正确的状态，不是则抛出异常或返回error co
 
   要有README 和 LICENSE 和 gitignore, 文件要有版权信息 和 项目描述， 要有启动图画
   方法要有文档注释
+  每个包可以有 doc.go
+  docstring采用 doxygen注释风格
+
+
+
+/*
+>
+
+	@brief: is this int element included in the array or not
+	@param: =arr= []int - array of ints
+	@param: =ele= int - int element
+	@return: =isContain= bool
+*/
+
+
+
 
   - 单行注释以 **（ // ）** 开头，多行注释/块注释 以 **（ /\* ）** 开始，以 **（ \*/ ）** 结尾。 
   - 所有的函数都应该在头部写块注释。
