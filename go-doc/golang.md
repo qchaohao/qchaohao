@@ -104,27 +104,29 @@
   - ***局部变量/函数，属性/方法*** 使用 ***驼峰命名法（camelCase）***。
   - ***全局变量/函数，属性/方法*** 使用 ***帕斯卡命名法（PascalCase）***。
   - ***类/结构体/对象*** 使用 ***帕斯卡命名法（PascalCase）***。
-  - ***临时数据*** 使用 ***匈牙利命名法***，尾缀（suffix），Int/Flt, Byt/Str, Lst/Map, Tup/Set
-  - ***正规数据*** 使用 ***匈牙利命名法***，尾缀（suffix），Numb, Buff, Text, Data, Name, Date, Time
-  - ***信息数据*** 使用 ***匈牙利命名法***，尾缀（suffix），Msg, 
-
-  - 属性前缀（prefix），is	对象是否符合期待的状态	isValid  避免使用否定词
-  - 属性前缀（prefix），has	对象是否持有期待的数据	hasObservers  避免使用否定词
-  - 属性前缀（prefix），may	对象是否允许期待的数据	hasObservers  避免使用否定词
+  - ***临时数据*** 使用 ***匈牙利命名法（hungarianCase）***，尾缀（suffix），Int/Flt, Byt/Str, Lst/Map, Tup/Set
+  - ***正规数据*** 使用 ***匈牙利命名法（hungarianCase）***，尾缀（suffix），Numb, Buff, Text, Data, Name, Date, Time
+  - ***信息数据*** 使用 ***匈牙利命名法（hungarianCase）***，尾缀（suffix），Msg, 
   
-  - 方法前缀（prefix），can	对象是否允许执行方法	canRemove
-  - 方法前缀（prefix），need 对象是否需要执行方法	canRemove
-  - 方法前缀（prefix），must 对象是否必须执行方法	canRemove
-
-  - 方法前缀（prefix），should 对象应该不应该执行方法 shouldMigrate
-  -     shall/will
-
-  
-
-
   - ***包名（文件夹）*** 使用名词，优先单个复数单词，涵盖一批或一类功能组。
+  
+  - 变量属性以名词开头，2个单词起，名词可以有复数
+  - 函数方法以动词开头，3个单词起，名词可以有复数
+
+  - 属性前缀（prefix）is，（类/实例）对象是否符合期望的状态	isReady,isValid   后缀（suffix）wishes  避免使用否定词
+
+  - 属性前缀 has，对象是否拥有期望的属性 hasData,hasError  后缀（suffix）exsits
+  - 属性前缀 can，对象是否具备期望的能力 canRead,canWrite  后缀（suffix）allows
+  - 属性前缀 use，对象是否使用属性和能力 useData,useRead  后缀（suffix）usages                           
+
+  - 方法前缀 could  对象可以/允许执行某个操作，结果是否成功    后缀（suffix）permit
+  - 方法前缀 should 对象应该/必须执行某个操作，结果是否成功    后缀（suffix）enable
+  - 方法前缀 would  对象将会/可能执行某个操作，结果是否成功    后缀（suffix）enable
+
+  
   - ***私有属性与私有方法*** 驼峰风格。
-  - 函数方法以动词开头，至少3个单词
+  
+  
   其他命名正规英文单词命名，该有复数有复数
 
   
