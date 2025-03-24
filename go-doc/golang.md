@@ -113,15 +113,15 @@
   - 变量属性以名词开头，2个单词起，名词可以有复数
   - 函数方法以动词开头，3个单词起，名词可以有复数
 
-  - 属性前缀（prefix）is，（类/实例）对象是否符合期望的状态	isReady,isValid   后缀（suffix）wishes  避免使用否定词
+  - 属性前缀（prefix）is，（类/实例）对象是否符合期望的状态	isReady,isValid   后缀（suffix）status  避免使用否定词
 
-  - 属性前缀 has，对象是否拥有期望的属性 hasData,hasError  后缀（suffix）exsits
-  - 属性前缀 can，对象是否具备期望的能力 canRead,canWrite  后缀（suffix）allows
-  - 属性前缀 use，对象是否使用属性和能力 useData,useRead  后缀（suffix）usages                           
+  - 属性前缀 has，对象是否拥有期望的属性 hasData,hasError  属性/方法采用后缀 exsits
+  - 属性前缀 can，对象是否具备期望的能力 canRead,canWrite  属性/方法采用后缀 enable
+  - 属性前缀 use，对象是否使用属性和能力 useData,useWrite  属性/方法采用后缀 usable                        
 
-  - 方法前缀 could  对象可以/允许执行某个操作，结果是否成功    后缀（suffix）permit
-  - 方法前缀 should 对象应该/必须执行某个操作，结果是否成功    后缀（suffix）enable
-  - 方法前缀 would  对象将会/可能执行某个操作，结果是否成功    后缀（suffix）enable
+  - 方法前缀 could  对象是否可以/允许/通过执行某个操作      后缀 passed
+  - 方法前缀 would  对象是否将会/可能/需要执行某个操作      后缀 needed 
+  - 方法前缀 should 对象是否应该/必须/有效执行某个操作      后缀 valid
 
   
   - ***私有属性与私有方法*** 驼峰风格。
