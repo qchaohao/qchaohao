@@ -104,8 +104,8 @@
   - ***局部变量/函数，属性/方法*** 使用 ***驼峰命名法（camelCase）***。
   - ***全局变量/函数，属性/方法*** 使用 ***帕斯卡命名法（PascalCase）***。
   - ***类/结构体/对象*** 使用 ***帕斯卡命名法（PascalCase）***。
-  - ***临时数据*** 使用 ***匈牙利命名法（hungarianCase）***，尾缀（suffix），Int/Flt, Byt/Str, Lst/Map, Tup/Set
-  - ***正规数据*** 使用 ***匈牙利命名法（hungarianCase）***，尾缀（suffix），Numb, Buff, Text, Data, Name, Date, Time
+  - ***临时数据*** 使用 ***匈牙利命名法（hungarianCase）***，尾缀（suffix），Int/Flt, Byt/Str, Lst/Map, Tup/Gen/Set
+  - ***正规数据*** 使用 ***匈牙利命名法（hungarianCase）***，尾缀（suffix），  Numb, Buff/Text,  Data,   Name, Date, Time
   - ***信息数据*** 使用 ***匈牙利命名法（hungarianCase）***，尾缀（suffix），Msg, 
   
   - ***包名（文件夹）*** 使用名词，优先单个复数单词，涵盖一批或一类功能组。
@@ -113,23 +113,40 @@
   - 变量属性以名词开头，2个单词起，名词可以有复数
   - 函数方法以动词开头，3个单词起，名词可以有复数
 
-  - 属性前缀（prefix）is，（类/实例）对象是否符合期望的状态	isReady,isValid   后缀（suffix）status  避免使用否定词
+  - 属性前缀（prefix）is，（类/实例）对象是否符合期望的状态	isReady,isValid   后缀（suffix）status   return isSucceed  避免使用否定词 
 
-  - 属性前缀 has，对象是否拥有期望的属性 hasData,hasError  属性/方法采用后缀 exsits
-  - 属性前缀 can，对象是否具备期望的能力 canRead,canWrite  属性/方法采用后缀 enable
-  - 属性前缀 use，对象是否使用属性和能力 useData,useWrite  属性/方法采用后缀 usable                        
+  - 属性前缀 has，对象是否拥有期望的属性 hasData,hasError  属性/方法采用后缀 exsits    return isExsits
+  - 属性前缀 can，对象是否具备期望的能力 canRead,canWrite  属性/方法采用后缀 enable    return isEnable
+  - 属性前缀 use，对象是否使用属性和能力 useData,useWrite  属性/方法采用后缀 usable    return isUsable              
 
-  - 方法前缀 could  对象是否可以/允许/通过执行某个操作      后缀 passed
-  - 方法前缀 would  对象是否将会/可能/需要执行某个操作      后缀 needed 
-  - 方法前缀 should 对象是否应该/必须/有效执行某个操作      后缀 valid
+  - 方法前缀 could  对象是否可以/允许/通过执行某个操作      后缀 passed  return isPassed
+  - 方法前缀 would  对象是否将会/可能/需要执行某个操作      后缀 needed  return isNeeded
+  - 方法前缀 should 对象是否应该/必须/有效执行某个操作      后缀 valid   return isValid
+  - 
+  - 随机变量提取不使用List列表，要随机数字拼接
+  - 判断 确定的字符串，列表，map等拿len长度去判断有没有值, 非确定的类型用not
 
+  get获取	   set 设置
+  init 初始	 end 结束
+  add 增加	remove 删除
+
+  query 查询 reply 回复
+  create 创建	destroy 销毁
+  build 构建	publish 发布
+  parse 解析  make 制作
+
+  select 选取	 ignore 忽略
+  extract 提取 inject 注入
+
+  find 查找	  collect 收集
+  load 载入  clear 清除
   
+  format 格式  keep 保持
+
   - ***私有属性与私有方法*** 驼峰风格。
   
   
   其他命名正规英文单词命名，该有复数有复数
-
-  
 
   
   ```
@@ -143,21 +160,12 @@ in，on，with，by，for，from, at，as, of, to, into, onto, over, per
   read 读取	write 写入
   save 保存  abort 放弃
   mark 标记  clean 清理	
-  load 载入  clear 清除  	 
   view 查看	 edit 编辑
   copy 复制	paste 粘贴
   enter 进入	quit 退出
   expand 展开	collapse 折叠
   backup 备份	restore 恢复
-  init 初始	 end 结束
-  add 增加	remove 删除
-  create 创建	destroy 销毁
-  query 查询 reply 回复
-  select 选取	 ignore 忽略
-  find 查找	  collect 收集
   search 搜索  listen 监听
-  format 格式  keep 保持 
-  parse 解析  make 制作
   modify 修改 lock 锁定  
   sort 排序  filter 筛选
   split 分割	merge 合并
@@ -166,27 +174,20 @@ in，on，with，by，for，from, at，as, of, to, into, onto, over, per
   bind 绑定	separate 分离
   insert 插入	delete 移除
   update 更新	reset 重置
-  build 构建	publish 发布
   start 开始	finish 完成
   compile 编译	execute 执行
   submit 提交  cancel 取消
   match 匹配  differ 区分
 
-
-  get获取	   set 设置
   redo 重做  undo 撤销
   import 导入	export 导出
-  include 包含 exclude  排除
-  extract 提取 inject 注入
+  include 包含 exclude  排除  
   attach 附着	detach 脱离
   encode 编码	decode 解码
   encrypt 加密	decrypt 解密
   input 输入	output 输出
   
 
-
-  
-  
 
 
   ```
@@ -196,18 +197,25 @@ in，on，with，by，for，from, at，as, of, to, into, onto, over, per
   要有README 和 LICENSE 和 gitignore, 文件要有版权信息 和 项目描述， 要有启动图画
   方法要有文档注释
   每个包可以有 doc.go
-  docstring采用 doxygen注释风格
-
-
+  docstring采用 doxygen注释风格, 写在函数上面
 
 /*
 >
 
-	@brief: is this int element included in the array or not
-	@param: =arr= []int - array of ints
-	@param: =ele= int - int element
-	@return: =isContain= bool
+    @brief: randomly return one string in the group
+    @param: =group= []string - array of strings
+    @return: =element= string
 */
+
+
+  python docstring  reST全称reStructredText
+
+"""
+    @brief: randomly return one element in the group
+
+    :param: =group= list - array of elements
+    :return: =element= any
+"""
 
 
 
