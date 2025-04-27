@@ -104,24 +104,34 @@
   - ***局部变量/函数，属性/方法*** 使用 ***驼峰命名法（camelCase）***。
   - ***全局变量/函数，属性/方法*** 使用 ***帕斯卡命名法（PascalCase）***。
   - ***类/结构体/对象*** 使用 ***帕斯卡命名法（PascalCase）***。
-  - ***临时数据*** 使用 ***匈牙利命名法（hungarianCase）***，尾缀（suffix），Int/Flt, Byt/Str, Lst/Map, Tup/Gen/Set
-  - ***正规数据*** 使用 ***匈牙利命名法（hungarianCase）***，尾缀（suffix），  Numb, Buff/Text,  Data,   Name, Date, Time
-  - ***信息数据*** 使用 ***匈牙利命名法（hungarianCase）***，尾缀（suffix），Msg, 
+  
+  - ***临时数据*** 使用 ***匈牙利命名法（hungarianCase）***，尾缀（suffix），Int/Flt, Byt/Str, Lst/Map/Obj, Tup/Set/Gen
+  - ***正规数据*** 使用 ***匈牙利命名法（hungarianCase）***，尾缀（suffix），Numb, Unit/Char/Text/Buff,  Data,  Name/Date/Time, 
+  - ***信息数据*** 使用 ***匈牙利命名法（hungarianCase）***，尾缀（suffix），Msg, Key, Val
   
   - ***包名（文件夹）*** 使用名词，优先单个复数单词，涵盖一批或一类功能组。
   
   - 变量属性以名词开头，2个单词起，名词可以有复数
   - 函数方法以动词开头，3个单词起，名词可以有复数
 
-  - 属性前缀（prefix）is，（类/实例）对象是否符合期望的状态	isReady,isValid   后缀（suffix）status   return isSucceed  避免使用否定词 
+  前缀（prefix） 后缀（suffix） 避免使用否定词
 
-  - 属性前缀 has，对象是否拥有期望的属性 hasData,hasError  属性/方法采用后缀 exsits    return isExsits
-  - 属性前缀 can，对象是否具备期望的能力 canRead,canWrite  属性/方法采用后缀 enable    return isEnable
-  - 属性前缀 use，对象是否使用属性和能力 useData,useWrite  属性/方法采用后缀 usable    return isUsable              
+    不允许isSuccess / isValid 用 succeed valid 替代
 
-  - 方法前缀 could  对象是否可以/允许/通过执行某个操作      后缀 passed  return isPassed
-  - 方法前缀 would  对象是否将会/可能/需要执行某个操作      后缀 needed  return isNeeded
-  - 方法前缀 should 对象是否应该/必须/有效执行某个操作      后缀 valid   return isValid
+  - 属性采用前缀  is，对象是否符合期望的状态 isReady,isActive  属性/方法采用后缀 allowed    return allowed  允许的      
+  - 属性采用前缀 has，对象是否包含期望的属性 hasData,hasError  属性/方法采用后缀 applied    return applied  适用的
+  - 属性采用前缀 can，对象是否具备期望的能力 canRead,canWrite  属性/方法采用后缀 enabled    return enabled  启用的
+  - 属性采用前缀 use，对象是否使用属性和能力 useData,useWrite  属性/方法采用后缀 usabled    return usabled  可用的          
+
+  业务流程 , 情态动词+动词开头
+
+  - 方法采用前缀  ought / 后缀 musted，对象是否严格执行期望的流程    return musted  必须的
+  - 方法采用前缀 should / 后缀 needed，对象是否应该执行期望的流程    return needed  需要的
+  - 方法采用前缀  could / 后缀 passed，对象是否可以执行期望的流程    return passed  通过的
+  - 方法采用前缀  would / 后缀 wished，对象是否可能执行期望的流程    return wished  希望的  ?
+  
+  
+  
   - 
   - 随机变量提取不使用List列表，要随机数字拼接
   - 判断 确定的字符串，列表，map等拿len长度去判断有没有值, 非确定的类型用not
