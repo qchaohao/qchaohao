@@ -106,7 +106,7 @@
   - ***类/结构体/对象*** 使用 ***帕斯卡命名法（PascalCase）***。
   
   - ***临时数据*** 使用 ***匈牙利命名法（hungarianCase）***，尾缀（suffix），Int/Flt, Byt/Str, Lst/Map/Obj, Tup/Set/Gen
-  - ***正规数据*** 使用 ***匈牙利命名法（hungarianCase）***，尾缀（suffix），Numb, Unit/Char/Text/Buff,  Data,  Name/Date/Time, 
+  - ***正规数据*** 使用 ***匈牙利命名法（hungarianCase）***，尾缀（suffix），Numb, Unit/Char/Text/Buff,  Data,  Name/Date/Time, Func
   - ***信息数据*** 使用 ***匈牙利命名法（hungarianCase）***，尾缀（suffix），Msg, Key, Val
   
   - ***包名（文件夹）*** 使用名词，优先单个复数单词，涵盖一批或一类功能组。
@@ -118,18 +118,18 @@
 
     不允许isSuccess / isValid 用 succeed valid 替代
 
-  - 属性采用前缀  is，对象是否符合期望的状态 isReady,isActive  属性/方法采用后缀 allowed    return allowed  允许的      
-  - 属性采用前缀 has，对象是否包含期望的属性 hasData,hasError  属性/方法采用后缀 applied    return applied  适用的
-  - 属性采用前缀 can，对象是否具备期望的能力 canRead,canWrite  属性/方法采用后缀 enabled    return enabled  启用的
-  - 属性采用前缀 use，对象是否使用属性和能力 useData,useWrite  属性/方法采用后缀 usabled    return usabled  可用的          
+  - 属性采用前缀  is，对象是否符合期望的状态 isReady,isActive  属性/方法采用后缀 allowed  允许的  return allowed        
+  - 属性采用前缀 has，对象是否包含期望的属性 hasData,hasError  属性/方法采用后缀 applied  适用的  return applied  
+  - 属性采用前缀 can，对象是否具备期望的能力 canRead,canWrite  属性/方法采用后缀 enabled  启用的  return enabled  
+  - 属性采用前缀 use，对象是否使用属性和能力 useData,useWrite  属性/方法采用后缀 usabled  可用的  return usabled            
 
-  业务流程 , 情态动词+动词开头
+  业务流程上的方法 , 情态动词+动词开头, 含义是在业务流程的基础上
 
-  - 方法采用前缀  ought / 后缀 musted，对象是否严格执行期望的流程    return musted  必须的
-  - 方法采用前缀 should / 后缀 needed，对象是否应该执行期望的流程    return needed  需要的
-  - 方法采用前缀  could / 后缀 passed，对象是否可以执行期望的流程    return passed  通过的
-  - 方法采用前缀  would / 后缀 wished，对象是否可能执行期望的流程    return wished  希望的  ?
-  
+  - 方法采用前缀   must / 后缀 enforced， 对象必须/被强制执行期望的过程    return passed  通过的      
+  - 方法采用前缀 should / 后缀 required， 对象应该/被要求执行期望的过程    return passed  通过的
+  - 方法采用前缀  could / 后缀 assigned， 对象可以/被分配执行期望的过程    return passed  通过的
+  - 方法采用前缀  would / 后缀 prompted， 对象可能/被引导执行期望的过程    return passed  通过的 
+
   
   
   - 
