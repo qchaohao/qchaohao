@@ -36,6 +36,7 @@
 > Highlights information that users should take into account, even when skimming.
 
 > [!NOTE]
+> Optional information to help a user be more successful.
 
 > [!TIP]
 > Optional information to help a user be more successful.
@@ -49,15 +50,20 @@
 > [!CAUTION]
 > Negative potential consequences of an action.
 
-> [!info]
+> [!INFO]
+> Optional information to help a user be more successful.
 
-> [!faq]
+> [!FAQ]
+> Optional information to help a user be more successful.
 
-> [!question]
+> [!QUESTION]
+> Optional information to help a user be more successful.
 
-> [!todo]
+> [!TODO]
+> Optional information to help a user be more successful.
 
-> [!example]
+> [!EXAMPLE]
+> Optional information to help a user be more successful.
 
 > - ***Markdown*** 是一种轻量级标记语言，由 **约翰·格鲁伯(John Gruber)<sup>!!!</sup>** 于2004年创建。
 > - 目标是实现“易读易写”，通过简单语法对文本进行样式化，使文档更容易阅读，提升写作和编辑的效率。
