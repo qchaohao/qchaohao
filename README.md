@@ -32,10 +32,10 @@
 
 ## 语言简介
 
-> [!NOTE] aadf
+> [!NOTE]
 > Highlights information that users should take into account, even when skimming.
 
-> [!note]
+> [!NOTE]
 
 > [!TIP]
 > Optional information to help a user be more successful.
