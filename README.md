@@ -1,6 +1,6 @@
 > - [Markdown语言](#Markdown语言)
 >   - [语言简介](#语言简介)
-> 	- [语法定义](#语法定义)
+>   - [语法定义](#语法定义)
 > 		- [基本语法](#基本语法)
 > 		- [扩展语法](#扩展语法)
 > 		- [转义字符](#转义字符)
@@ -43,22 +43,23 @@
 
 > ### 基本语法
 > ---
-| 元素                           | Markdown 语法                     |
-| :--- | :--- |
-| **标题(Heading)**             | # H1<br>## H2                     |
-| **粗体(Bold)**               | \*\*bold text**                   |
-| **区块引用(Blockquote)**      | > blockquote                      |
-| **分隔线(Horizontal Rule)**    | ---                               |
-| **无序列表(Unordered List)**   | - First item<br>- Second item     |
-| **有序列表(Ordered List)**     | 1. First item<br>2. Second item   |
-| **链接(Link)**               | \[title](https://www.example.com) |
-| **图片(Image)**              | \!\[alt text](image.jpg)          |
-| 斜体(Italic)                | \*italicized text*                |
-| 代码(Code)                   | \`code\`                          |
-| 区块(Block)                   | 每行4个空格, 内容没有格式           |
-| 内嵌HTML标签                   | \<em\>word\</em\>                     |
+> | 元素                           | Markdown 语法                     |
+> | :--- | :--- |
+> | **标题(Heading)**             | # H1<br>## H2                     |
+> | **粗体(Bold)**               | \*\*bold text**                   |
+> | **区块引用(Blockquote)**      | > blockquote                      |
+> | **分隔线(Horizontal Rule)**    | ---                               |
+> | **无序列表(Unordered List)**   | - First item<br>- Second item     |
+> | **有序列表(Ordered List)**     | 1. First item<br>2. Second item   |
+> | **链接(Link)**               | \[title](https://www.example.com) |
+> | **图片(Image)**              | \!\[alt text](image.jpg)          |
+> | 斜体(Italic)                | \*italicized text*                |
+> | 代码(Code)                   | \`code\`                          |
+> | 区块(Block)                   | 每行4个空格, 内容没有格式           |
+> | 内嵌HTML标签                   | \<em\>word\</em\>                     |
 
-### 扩展语法
+> ### 扩展语法
+> ---
 
 | 元素                            | Markdown 语法                                            |
 | :--- | :--- |
@@ -169,23 +170,24 @@
 > 举例：
 > - 这是无序第一层  
 > - 这是换行  
-> 	- 这是无序第二层 
-> 		- 这是无序第三层 
-> 	    - 这是换行
-> 	- 这是换行  
+>    - 这是无序第二层 
+>       - 这是无序第三层 
+>       - 这是换行
+>    - 这是换行  
 
 ### 有序列表
 
 - 语法：使用一个 ***数字*** **( 1 )** 加上 ***点*** **( . )** 然后加上空格。
 - 说明：理论上可以无限嵌套，最好第一级间隔2空格，下面都是间隔4空格。
-> 举例：
+> 举例： 
 > 1. 这是有序第一层
 > 2. 这是换行
-> 	1. 这是有序第二层
-> 		1. 这是有序第三层
-> 		2. 这是换行
-> 		3. asf 
-> 	2. 这是换行
+>     1. 这是有序第二层
+>         1. 这是有序第三层
+>         2. 这是换行
+>         3. asf 
+>     2. 这是换行
+
 
 ### 任务列表
 
