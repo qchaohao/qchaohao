@@ -1,6 +1,8 @@
 # Markdown语言
 ![GitHub图示](./logo.png)
 
+---
+> [!NOTE]
 > - [Table of Contents](#Markdown语言)
 >    - [语言简介](#语言简介)
 >    - [语法定义](#语法定义)
@@ -25,46 +27,12 @@
 >    - [表格定义](#表格定义)
 >    - [表格举例](#表格举例)
 >    - [代码区块](#代码区块)
-
+> - [Bottom](#Bottom)
 ---
 
-
-
 ## 语言简介
-
-> [!NOTE]: My Title
-> Highlights information that users should take into account, even when skimming.
-
-> [!NOTE]: My Title
-> Optional information to help a user be more successful.
-
-> [!TIP]: My Title
-> Optional information to help a user be more successful.
-
-> [!IMPORTANT]  
-> Crucial information necessary for users to succeed.
-
-> [!WARNING]  
-> Critical content demanding immediate user attention due to potential risks.
-
-> [!CAUTION]
-> Negative potential consequences of an action.
-
-> [!INFO]
-> Optional information to help a user be more successful.
-
-> [!FAQ]
-> Optional information to help a user be more successful.
-
-> [!QUESTION]
-> Optional information to help a user be more successful.
-
-> [!TODO]
-> Optional information to help a user be more successful.
-
-> [!EXAMPLE]
-> Optional information to help a user be more successful.
-
+> [!NOTE]
+> ---
 > - ***Markdown*** 是一种轻量级标记语言，由 **约翰·格鲁伯(John Gruber)<sup>!!!</sup>** 于2004年创建。
 > - 目标是实现“易读易写”，通过简单语法对文本进行样式化，使文档更容易阅读，提升写作和编辑的效率。
 > - 优点包括内容与格式分离，专注于文字内容而不是排版样式，可以轻松导出HTML、PDF等多种格式的文件。
@@ -74,11 +42,10 @@
 > - [Obsidian Help](https://help.obsidian.md/syntax)
 > - [GitHub文档](https://docs.github.com/zh/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 
-
 ## 语法定义
 ### 基本语法
-> #### 阿斯蒂芬
-> ---  
+> [!TIP]  
+> ---
 > | 元素                           | Markdown 语法                     |
 > | :--- | :--- |
 > | **标题(Heading)**             | # H1<br>## H2                     |
@@ -97,9 +64,6 @@
 > - [返回目录](#Markdown语言) \ [返回底部](#Bottom)
 
 ### 扩展语法
-> #### adf [返回目录](#目录)
-> ---
-
 | 元素                            | Markdown 语法                                            |
 | :--- | :--- |
 | **删除线（Strikethrough）**     | \~\~The world is flat.\~\~                               |
@@ -133,9 +97,7 @@
 ## 写法规定
 
 ### 内容规定
-
-> #### 你看咋的
-> ---
+> [!WARNING] 
 > - 文件头部必须建立 ***目录*** 链接，不能放在任何标记内，并以 ***分割线*** 区分。
 > - 单独的重点只用 ***粗体***，与非重点文字混在一起使用 ***粗斜体*** 表示重点，前后空格隔开。
 > - 重点的 ***符号和数字*** 优先使用 ***粗体***，***文字*** 优先使用 ***粗斜体***。
@@ -162,7 +124,7 @@
   - ***图片*** 最好切割大小使用基本语法引用，标签引用 ***不被 Markmap 识别***。
 
 ## 文本定义
-
+> [!TIP]
 - ***粗体***：使用 ***双星号*** **(\*\*‌)** 前后包围内容 **文本‌**。
 - ***粗斜体***：使用 ***三星号*** **(\*\*\*)** 前后包围内容 **‌*文本‌***。
 - ***删除线***：使用 ***双波浪号*** **(\~\~)** 前后包围内容 ~~文本‌~~。 
@@ -188,6 +150,7 @@
 
 - 语法：使用一个 ***大于号*** **( > )** 然后加上一个空格。
 - 说明：换行需要在末尾加上两个空格，理论上可以无限嵌套，嵌套一个加一个符号。
+- [!NOTE] [!TIP] [!WARNING]
 > 举例：  
 > \>这是引用嵌套举例  
 > 这是换行  
@@ -195,6 +158,7 @@
 >> 这是换行  
 >>> \>>>引用嵌套理论上可无限嵌套  
 >>> 这是换行  
+
 
 ## 分割线段
 
@@ -239,6 +203,7 @@
   >         - [x] 这是任务第三层
 
 ## 链接定义
+> [!NOTE]
 > - 语法：**\[超链接显示名](超链接地址)**。
 > - 说明：
 >    - ***超链接显示名***【必须写链接说明文字】。
@@ -246,24 +211,25 @@
 > - 举例：[GitHub文档](https://docs.github.com/zh)
 
 ## 图片定义
-
-  - 语法：**\!\[图片Alt](图片Link)**。
-  - 说明：
-      - ***图片Alt***【增加了一个 ***感叹号***，必须写图片说明文字】。
-      - ***图片Link***【图片存储的地址链接】。
-  - 举例：![GitHub图示](./logo.png)
+> [!NOTE]
+> - 语法：**\!\[图片Alt](图片Link)**。
+> - 说明：
+>    - ***图片Alt***【增加了一个 ***感叹号***，必须写图片说明文字】。
+>    - ***图片Link***【图片存储的地址链接】。
+> - 举例：\
+> ![GitHub图示](./logo.png)
 
 ## 脚注定义
-
-- 脚注可以添加 ***注释*** 和 ***参考***，而不会使文档正文混乱。
-- 创建脚注在 ***方括号*** 内添加单个 ***脱字号和标识符*** 如 **( \[\^a1] )**。
-- 标识符可以是 ***数字*** 或 ***单词***，但不能包含 ***空格*** 或 ***制表符***。
-- 脚注具体内容可以再次使用创建符号并后跟 ***冒号*** 如 **( \[\^a1]: )**。
-- 有些显示 1 不准，我们可以从 **a1** 开始计数。
-> 举例：  
+> [!NOTE]
+> - 脚注可以添加 ***注释*** 和 ***参考***，而不会使文档正文混乱。
+> - 创建脚注在 ***方括号*** 内添加单个 ***脱字号和标识符*** 如 **( \[\^a1] )**。
+> - 标识符可以是 ***数字*** 或 ***单词***，但不能包含 ***空格*** 或 ***制表符***。
+> - 脚注具体内容可以再次使用创建符号并后跟 ***冒号*** 如 **( \[\^a1]: )**。
+> - 有些显示 1 不准，我们可以从 **a1** 开始计数。
+> - 举例：  
 > 测试脚注1，[^a1] 测试脚注2。[^a2]  
 >
-> [^a1]: 测试脚注1内容。  
+> [^a1]: 测试脚注1内容。 
 > [^a2]: 测试脚注2内容。
 
 ## 表格定义
@@ -282,20 +248,20 @@
 
 ```python
 
-  # 单个代码使用一个 反引号 ( ` ) 前后包围。
-  # 多行代码块使用三个 反引号 ( ``` ) 前后包围。
-  # 语法突出显示 可以在前面的 反引号 旁边指定一种语言，例如 python。
+	# 单个代码使用一个 反引号 ( ` ) 前后包围。
+	# 多行代码块使用三个 反引号 ( ``` ) 前后包围。
+	# 语法突出显示 可以在前面的 反引号 旁边指定一种语言，例如 python。
 
-  def function(n):
-    print(n)
+	def function(n):
+		print(n)
 
-    for i in range(10):
-      print(i)
+		for i in range(10):
+			print(i)
 
-    if True:
-      print(2)
-    else:
-      print(3)
+		if True:
+			print(2)
+		else:
+			print(3)
 
 ```
 
