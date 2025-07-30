@@ -116,7 +116,7 @@
 
   前缀（prefix） 后缀（suffix） 避免使用否定词
 
-    不允许isSuccess / isValid 用 succeed valid 替代
+    不允许 isSuccess / isPass / isValid 用 succeed passed valided 替代
 
   - 属性采用前缀  is，对象是否符合期望的状态 isReady,isActive  属性/方法采用后缀 allowed  允许的  return allowed        
   - 属性采用前缀 has，对象是否包含期望的属性 hasData,hasError  属性/方法采用后缀 applied  适用的  return applied  
@@ -139,19 +139,21 @@
   get获取	   set 设置
   init 初始	 end 结束
   add 增加	remove 删除
+  parse 解析  make 制作
 
   query 查询 reply 回复
   create 创建	destroy 销毁
   build 构建	publish 发布
-  parse 解析  make 制作
-
+  
+  format 格式  keep 保持
   select 选取	 ignore 忽略
   extract 提取 inject 注入
-
+  read 读取	write 写入
   find 查找	  collect 收集
   load 载入  clear 清除
   
-  format 格式  keep 保持
+  save 保存  abort 放弃
+  open 打开	close 关闭
 
   - ***私有属性与私有方法*** 驼峰风格。
   
@@ -166,9 +168,8 @@
 in，on，with，by，for，from, at，as, of, to, into, onto, over, per
 
 
-  open 打开	close 关闭
-  read 读取	write 写入
-  save 保存  abort 放弃
+  
+  
   mark 标记  clean 清理	
   view 查看	 edit 编辑
   copy 复制	paste 粘贴
@@ -233,6 +234,12 @@ in，on，with，by，for，from, at，as, of, to, into, onto, over, per
   - 单行注释以 **（ // ）** 开头，多行注释/块注释 以 **（ /\* ）** 开始，以 **（ \*/ ）** 结尾。 
   - 所有的函数都应该在头部写块注释。
   - 块注释不要中英文混用，内容简洁清晰，缩进错落有致，符号单独一行。
+
+
+
+golang没有类和继承，有结构体组合
+
+
 
 ### 关键字
 
