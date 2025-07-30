@@ -32,13 +32,13 @@
 
 ## 语言简介
 
-> [!NOTE]
+> [!NOTE]: My Title
 > Highlights information that users should take into account, even when skimming.
 
-> [!NOTE]
+> [!NOTE]: My Title
 > Optional information to help a user be more successful.
 
-> [!TIP]
+> [!TIP]: My Title
 > Optional information to help a user be more successful.
 
 > [!IMPORTANT]  
